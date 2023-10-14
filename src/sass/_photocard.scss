@@ -24,8 +24,7 @@
         width: 190px;
         height: 130px;
         object-fit: cover;
-        // -webkit-transform: scale(1);
-        transition: transform 0.5s ease;
+                transition: transform 0.5s ease;
       }
     }
   }
@@ -35,8 +34,7 @@
   display: flex;
   gap: 5px;
   justify-content: space-around;
-  // color: #f5e191;
-  stroke-width: 0.1px;
+   stroke-width: 0.1px;
   &__box {
     max-width: 80px;
     text-align: center;
