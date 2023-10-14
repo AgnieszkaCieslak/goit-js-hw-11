@@ -11,22 +11,23 @@
     margin-top: -20px;
     position: absolute;
     max-height: 150px;
-    right: 90px;
+    right: 9vw;
   }
   &__form {
     margin-top: 15px;
-    margin-left: 90px;
+    margin-left: 9vw;
     max-width: 700px;
     height: 60px;
     background: linear-gradient(122deg, #000000 20.76%, #f2d973 94.18%);
     border-radius: 0px;
-       & input {
+    & input {
       max-width: 370px;
-      padding: 0 0 0 15px;
+           padding-top: 5px;
+      padding-left: 15px;
       float: left;
-      color: #f2d973;
-      font-size: 38px;
-      font-weight: 700;
+      color: #f2df73;
+      font-size: 35px;
+      font-weight: 500;
       border: 0;
       background: transparent;
       &:focus {
@@ -57,4 +58,3 @@
     }
   }
 }
-
