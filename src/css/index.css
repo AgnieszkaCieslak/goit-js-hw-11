@@ -1,0 +1,196 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.search-container {
+  background-image: url("/src/images/bkg1.jpg");
+  position: relative;
+  padding-top: 10px;
+  height: 120px;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow: hidden;
+}
+.search-container .logo > img {
+  margin-top: -20px;
+  position: absolute;
+  max-height: 150px;
+  right: 9vw;
+}
+.search-container__form {
+  margin-top: 15px;
+  margin-left: 9vw;
+  max-width: 700px;
+  height: 60px;
+  background: linear-gradient(122deg, #000000 20.76%, #f2d973 94.18%);
+  border-radius: 0px;
+}
+.search-container__form input {
+  max-width: 370px;
+  padding-top: 5px;
+  padding-left: 15px;
+  float: left;
+  color: #f2df73;
+  font-size: 35px;
+  font-weight: 500;
+  border: 0;
+  background: transparent;
+}
+.search-container__form input:focus {
+  outline: 0;
+  background: transparent;
+}
+.search-container__form button {
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 59px;
+  width: 60px;
+  color: #000000;
+  background: linear-gradient(122deg, #f2d973 20.76%, #000 94.18%);
+}
+.search-container__form button:hover {
+  background: linear-gradient(122deg, #000000 20.76%, #f2d973 94.18%);
+  color: #f2d973;
+}
+.search-container__form button:active {
+  -webkit-box-shadow: 0px 0px 50px 0px #f2d973;
+          box-shadow: 0px 0px 50px 0px #f2d973;
+}
+.search-container__form button:focus {
+  outline: 0;
+}
+
+.sl-wrapper {
+  background-image: url("/src/images/bkg1.jpg");
+}
+
+.sl-wrapper button.sl-close {
+  color: #f5e191;
+  height: 50px;
+  font-size: 4rem;
+}
+
+.sl-wrapper .sl-navigation button.sl-next,
+.sl-wrapper .sl-navigation button.sl-prev {
+  color: #f5e191;
+}
+
+.sl-wrapper div.sl-counter {
+  color: #f5e191;
+  font-size: 1.5rem;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-image: url("/src/images/bkg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery .photo-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20vw;
+  height: 20vw;
+  margin: 5px;
+  -webkit-box-shadow: 0 1px 3px #f5e191, 0 5px 5px #f5e191;
+          box-shadow: 0 1px 3px #f5e191, 0 5px 5px #f5e191;
+  overflow: hidden;
+}
+.gallery .photo-card .gallery-item {
+  height: 100%;
+}
+.gallery .photo-card .gallery-item:hover img {
+  -webkit-transform: scale(2.2);
+          transform: scale(2.2);
+}
+.gallery .photo-card .gallery-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  stroke-width: 0.1px;
+}
+.info__box {
+  max-width: 80px;
+  text-align: center;
+  line-height: 0.2em;
+  font-size: 0.7em;
+}
+
+.info .info__box .info-item .material-symbols-outlined {
+  color: #f5e191;
+  font-size: 1.5rem;
+}
+
+.info-counter {
+  color: #f5e191;
+  font-size: 1rem;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 0 10px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f2d973;
+}
+.btn-container .load-more,
+.btn-container .close-btn {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 120px;
+  height: 40px;
+  background: #f2d973;
+  border: 1px solid #f2d973;
+}
+.btn-container .load-more:hover,
+.btn-container .close-btn:hover {
+  color: #f2d973;
+  background: linear-gradient(122deg, #f2d973 25.38%, #000000 51.29%, #f2d973 76.31%);
+  border: none;
+}
+.btn-container .load-more {
+  bottom: -20px;
+}
+.btn-container .close-btn {
+  bottom: -80px;
+}/*# sourceMappingURL=index.css.map */
