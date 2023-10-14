@@ -28,11 +28,8 @@ async function eventHandler(e) {
 
   Notiflix.Notify.init({
     width: '380px',
-    fontAwesomeIconSize: '10px', // ?
     borderRadius: '0px',
-    position: 'center', //?
     fontSize: '18px',
-    fontAwesomeIconSize: '5px', //?
     success: {
       background: '#aaf58d',
       textColor: '#000',
@@ -55,7 +52,7 @@ async function eventHandler(e) {
     },
   });
 
-  fetchImages(name, page, perPage)//fetchImages
+  fetchImages(name, page, perPage)
     .then(name => {
       let totalPages = name.totalHits / perPage;
 
@@ -143,7 +140,7 @@ loadBtn.addEventListener(
   () => {
     name = searchQuery.value;
     page += 1;
-    fetchImages(name, page, perPage).then(name => {//fetchImages
+    fetchImages(name, page, perPage).then(name => {
       let totalPages = name.totalHits / perPage;
       renderGallery(name);
       new SimpleLightbox('.gallery a');
