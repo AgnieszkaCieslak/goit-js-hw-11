@@ -1,4 +1,3 @@
-// Imports: SimpleLightbox, Notiflix & Axios
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
@@ -63,7 +62,7 @@ async function eventHandler(e) {
     },
   });
 
-  fetchImages(name, page, perPage)
+  fetchImages(name, page, perPage)//fetchImages
     .then(name => {
       let totalPages = name.totalHits / perPage;
 
@@ -155,7 +154,7 @@ loadBtn.addEventListener(
   () => {
     name = searchQuery.value;
     page += 1;
-    fetchImages(name, page, perPage).then(name => {
+    fetchImages(name, page, perPage).then(name => {//fetchImages
       let totalPages = name.totalHits / perPage;
       renderGallery(name);
       new SimpleLightbox('.gallery a');
@@ -170,6 +169,3 @@ loadBtn.addEventListener(
   true
 );
 
-// Preloader
-
-// window.addEventListener('load', fadeEffect);
